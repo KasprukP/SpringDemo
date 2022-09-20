@@ -10,7 +10,9 @@
 
     <bean id="myPet"
           class="spring.Dog"
-    scope="singleton">
+    init-method="init"
+destroy-method="destroy"          >
+
             </bean>
 
 </beans>
